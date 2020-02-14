@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		385171B123F62A7D00C6A308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385171B023F62A7D00C6A308 /* AppDelegate.swift */; };
 		385171B323F62A7D00C6A308 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385171B223F62A7D00C6A308 /* SceneDelegate.swift */; };
-		385171B523F62A7D00C6A308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385171B423F62A7D00C6A308 /* ViewController.swift */; };
+		385171B523F62A7D00C6A308 /* StarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385171B423F62A7D00C6A308 /* StarsViewController.swift */; };
 		385171B823F62A7D00C6A308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385171B623F62A7D00C6A308 /* Main.storyboard */; };
 		385171BA23F62A7F00C6A308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385171B923F62A7F00C6A308 /* Assets.xcassets */; };
 		385171BD23F62A7F00C6A308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385171BB23F62A7F00C6A308 /* LaunchScreen.storyboard */; };
+		385171C523F6356800C6A308 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385171C423F6356800C6A308 /* Star.swift */; };
+		385171C823F636A100C6A308 /* StarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385171C723F636A100C6A308 /* StarTableViewCell.swift */; };
+		385171D223F6427400C6A308 /* StarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385171D123F6427400C6A308 /* StarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		385171AD23F62A7D00C6A308 /* Stars(iOSPT5).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stars(iOSPT5).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		385171B023F62A7D00C6A308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		385171B223F62A7D00C6A308 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		385171B423F62A7D00C6A308 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		385171B423F62A7D00C6A308 /* StarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsViewController.swift; sourceTree = "<group>"; };
 		385171B723F62A7D00C6A308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		385171B923F62A7F00C6A308 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		385171BC23F62A7F00C6A308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		385171BE23F62A7F00C6A308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		385171C423F6356800C6A308 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		385171C723F636A100C6A308 /* StarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarTableViewCell.swift; sourceTree = "<group>"; };
+		385171D123F6427400C6A308 /* StarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		385171AF23F62A7D00C6A308 /* Stars(iOSPT5) */ = {
 			isa = PBXGroup;
 			children = (
-				385171B023F62A7D00C6A308 /* AppDelegate.swift */,
-				385171B223F62A7D00C6A308 /* SceneDelegate.swift */,
-				385171B423F62A7D00C6A308 /* ViewController.swift */,
-				385171B623F62A7D00C6A308 /* Main.storyboard */,
-				385171B923F62A7F00C6A308 /* Assets.xcassets */,
-				385171BB23F62A7F00C6A308 /* LaunchScreen.storyboard */,
+				385171C623F6357300C6A308 /* Model */,
+				385171CC23F63F2A00C6A308 /* Views */,
+				385171CE23F63F8300C6A308 /* Controller */,
+				385171CD23F63F3E00C6A308 /* View Controllers */,
+				385171CB23F63EF600C6A308 /* Resources */,
 				385171BE23F62A7F00C6A308 /* Info.plist */,
 			);
 			path = "Stars(iOSPT5)";
+			sourceTree = "<group>";
+		};
+		385171C623F6357300C6A308 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				385171C423F6356800C6A308 /* Star.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		385171CB23F63EF600C6A308 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				385171B023F62A7D00C6A308 /* AppDelegate.swift */,
+				385171B223F62A7D00C6A308 /* SceneDelegate.swift */,
+				385171B923F62A7F00C6A308 /* Assets.xcassets */,
+				385171BB23F62A7F00C6A308 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		385171CC23F63F2A00C6A308 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				385171B623F62A7D00C6A308 /* Main.storyboard */,
+				385171C723F636A100C6A308 /* StarTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		385171CD23F63F3E00C6A308 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				385171B423F62A7D00C6A308 /* StarsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		385171CE23F63F8300C6A308 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				385171D123F6427400C6A308 /* StarController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				385171B523F62A7D00C6A308 /* ViewController.swift in Sources */,
+				385171B523F62A7D00C6A308 /* StarsViewController.swift in Sources */,
+				385171D223F6427400C6A308 /* StarController.swift in Sources */,
 				385171B123F62A7D00C6A308 /* AppDelegate.swift in Sources */,
 				385171B323F62A7D00C6A308 /* SceneDelegate.swift in Sources */,
+				385171C523F6356800C6A308 /* Star.swift in Sources */,
+				385171C823F636A100C6A308 /* StarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
